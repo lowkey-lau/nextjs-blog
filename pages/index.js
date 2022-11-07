@@ -1,13 +1,11 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Date from "../components/date";
 import { getSortedPostsData } from "../lib/posts";
+import utilStyles from "../styles/utils.module.css";
 
 export default function Home({ allPostsData }) {
-  console.log(allPostsData);
-
   return (
     <Layout home>
       <Head>
